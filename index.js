@@ -1,4 +1,4 @@
-const Mnemonic = require('./mnemonic');
+const Mnemonic = require('./src/mnemonic');
 
 module.exports = {
   // Generates a new wallet when no providedPhrase
