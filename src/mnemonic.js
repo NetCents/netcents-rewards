@@ -21,7 +21,6 @@ module.exports = class Mnemonic {
 
   /**
   * @param {String} passphrase OPTIONAL passphrase to sign phrase with
-  * @param {String} network e.g. 'livenet'
   * @return {Class} returns Mnemonic with privateKey and address
   */
   toAddress(passphrase) {
