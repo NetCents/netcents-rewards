@@ -20,11 +20,8 @@ module.exports = class Mnemonic {
   }
 
   /**
-  * Convert seed to HDPrivateKey
-  * @method toHDPrivateKey
   * @param {String} passphrase OPTIONAL passphrase to sign phrase with
-  * @param {String} network e.g. 'livenet'
-  * @return {Class} returns an instance of HDPrivateKey
+  * @return {Class} returns Mnemonic with privateKey and address
   */
   toAddress(passphrase) {
     const seed = this._toSeed(passphrase);
@@ -45,7 +42,7 @@ module.exports = class Mnemonic {
   /**
   * Hash phrase
   * @private
-  * @method toHDPrivateKey
+  * @method _toSeed
   * @param {String} passphrase OPTIONAL passphrase to sign phrase with
   * @return {Hex} returns a hexadecimal representation of the phrase/string
   */
