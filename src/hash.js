@@ -1,6 +1,6 @@
 'use strict';
 
-var crypto = require('cryptojs');
+var crypto = require('crypto');
 
 var Hash = module.exports;
 
