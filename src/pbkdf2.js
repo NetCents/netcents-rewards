@@ -1,6 +1,6 @@
 'use strict';
 
-var crypto = require("crypto");
+var crypto = require("cryptojs");
 
 /**
  * PDKBF2
